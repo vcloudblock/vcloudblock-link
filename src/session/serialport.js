@@ -187,7 +187,7 @@ class SerialportSession extends Session {
                         });
 
                         port.on('error', error => {
-                            console.log('OpenBlock Link Error:', error);
+                            console.log('VCloudBlock Link Error:', error);
                             this.disconnect();
                             this.sendRemoteRequest('peripheralUnplug', null);
                         });

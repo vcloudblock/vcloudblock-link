@@ -3,8 +3,8 @@ const path = require('path');
 const os = require('os');
 const fs = require('fs');
 
-const user = 'openblockcc';
-const repo = 'openblock-tools';
+const user = 'vcloudblock';
+const repo = 'vcloudblock-tools';
 const outputdir = path.resolve('./tools');
 const leaveZipped = false;
 

@@ -1,6 +1,6 @@
-const OpenBlockLink = require('../src/index');
+const VCloudBlockLink = require('../src/index');
 
-const link = new OpenBlockLink();
+const link = new VCloudBlockLink();
 link.listen();
 
 link.on('ready', () => {

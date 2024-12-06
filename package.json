@@ -1,13 +1,13 @@
 {
-  "name": "openblock-link",
+  "name": "vcloudblock-link",
   "version": "0.2.0",
-  "description": "Porvide local hardware function to openblock",
+  "description": "Porvide local hardware function to vcloudblock",
   "main": "src/index.js",
   "scripts": {
     "fetch": "rimraf tools firmwares && node script/download-tools.js && node script/download-firmwares.js",
-    "start": "rimraf ../.openblockData/link && node test/start-server.js --log-level=info",
-    "start:debug": "rimraf ../.openblockData/link && node test/start-server.js --log-level=debug",
-    "clean": "rimraf ../.openblockData/link tools firmwares",
+    "start": "rimraf ../.vcloudblockData/link && node test/start-server.js --log-level=info",
+    "start:debug": "rimraf ../.vcloudblockData/link && node test/start-server.js --log-level=debug",
+    "clean": "rimraf ../.vcloudblockData/link tools firmwares",
     "docs": "jsdoc -c .jsdoc.json",
     "lint": "eslint ./src",
     "test": "",
@@ -15,10 +15,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/openblockcc/openblock-link.git"
+    "url": "git+https://github.com/vcloudblock/vcloudblock-link.git"
   },
   "keywords": [
-    "openblock",
+    "vcloudblock",
     "link",
     "microbit",
     "arduino",
@@ -27,12 +27,12 @@
     "ble",
     "serialport"
   ],
-  "author": "OpenBlock Team",
+  "author": "VCloudBlock Team",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/openblockcc/openblock-link/issues"
+    "url": "https://github.com/vcloudblock/vcloudblock-link/issues"
   },
-  "homepage": "https://github.com/openblockcc/openblock-link#readme",
+  "homepage": "https://github.com/vcloudblock/vcloudblock-link#readme",
   "dependencies": {
     "@abandonware/noble": "1.9.2-15",
     "ansi-string": "^0.2.1",
@@ -43,6 +43,8 @@
     "js-yaml": "^4.0.0",
     "node-fetch": "^2.6.7",
     "serialport": "10.4.0",
+    "usb": "^2.14.0",
+    "vcloudblock-link": "file:",
     "ws": "^7.1.1"
   },
   "devDependencies": {
